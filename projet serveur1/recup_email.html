@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Récupération de mot de passe</title>
+    <link rel="stylesheet" href="css/recup_email.css">
+</head>
+<body>
+    <div>
+
+    </div>
+    <div class="container">
+        <!--FORMULAIRE-->
+
+        <form action="recup_email" method="POST">
+            <p>Entrez votre adresse mail</p>
+            <br>
+            <input type="email" name="email_recup" id="email_recup" placeholder="E-mail">
+            <br>
+            <input type="submit" value="Valider">
+            <br>
+            <a href="connexion.html">Annuler</a>
+        </form>
+
+    </div>
+    
+    <div id="email_introuvable" class="overlay">
+        <div class="popup">
+            <h3>E-mail introuvable</h3>
+            <a href="#" class="cross">&times;</a>
+            <p class="p">Veuillez entrer une adresse E-mail déjà existante.</p>
+        </div>
+    </div>
+
+    <div id="echec" class="overlay">
+        <div class="popup">
+            <h3>Echec de l'envoi</h3>
+            <a href="#" class="cross">&times;</a>
+            <p class="p">Echec lors de l'envoi de l'E-mail. Veuillez réessayer</p>
+        </div>
+    </div>
+
+</body>
+</html>

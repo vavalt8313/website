@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacré Blog</title>
+    <link rel="stylesheet" href="css/devoirs.css">
+    
+</head>
+<body>
+    <header>
+        <h2 class="logo">Sacré blog</h2>
+        <nav class="navigation">
+            <div class="nav-links">
+                <a href="accueil.html">accueil</a>
+                <a href="chat.html" >chat en ligne</a>
+                <a href="devoirs.html" class="active">aide aux devoirs</a>
+                <a href="report.html">support</a>
+                <a href="connexion.html">connexion</a>
+            </div>
+            <img src="images/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+
+    </header>
+
+
+        <div id="messages">
+            <ul id="liste">
+                {% for dvr in devoirs %}
+                <br>
+                <li >
+                    <div class="pseudo">
+                        <strong>{{dvr[1]}}</strong>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="msg">
+                        {{dvr[0]}}
+                    </div>
+                    
+                </li>
+                {% endfor %}
+            </ul>
+
+            <script type="text/javascript">
+                element = document.getElementById('liste');
+                element.scrollTop = element.scrollHeight;
+            </script> 
+
+            <form id="form" action="devoirs" method="POST">
+                <input autofocus type="text" id="message" placeholder="Entrez votre message" name="demande" required>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

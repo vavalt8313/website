@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacré Blog</title>
+    <link rel="stylesheet" href="css/accueil.css">
+    
+</head>
+<body>
+    <header>
+        <h2 class="logo">Sacré blog</h2>
+        <nav class="navigation">
+            <div class="nav-links">
+                <a href="accueil.html" class="active">accueil</a>
+                <a href="chat.html" >chat en ligne</a>
+                <a href="devoirs.html">aide aux devoirs</a>
+                <a href="report.html">support</a>
+                <a href="connexion.html">connexion</a>
+            </div>
+            <img src="images/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+
+    </header>
+
+
+    <div class="text">
+        <br>
+        <p> <div style="text-align: left;"><h3><strong>Présentation de Sacré Blog</strong></h3>
+        <br>
+        Bonjour et bienvenue sur le site web de Sacré Blog. Ce blog a pour ambition de faciliter l’échange entre les élèves du lycée et du collège Sacré Cœur, que cela soit à but informatif, récréatif ou scolaire.
+        Les rubriques ci-dessus vous permettent de naviguer dans les différentes pages de ce site.
+        <br>
+        <br>
+        Voici les différentes page présentes sur celui-ci:
+        <br>
+        <br>
+        <strong>« Accueil » : </strong>Cette page de présentation du Sacré Blog.
+        <br>
+        <strong>« Chat en ligne » :</strong> Vos conversations avec vos camarades.
+        <br>
+        <strong>« Aide aux devoirs » : </strong>Page d’échange propre à l’aide aux devoirs.
+        <br>
+        <strong>« Support » :</strong> Page support contenant les informations vous permettant de nous contacter en cas d’erreur ou de questionnement quant au fonctionnement du site.
+        <br>
+        <br>
+        Nous rappelons que ces pages sont amenées à évoluer dans de potentielles mises à jour.
+        <br>
+        Nous vous souhaitons une utilisation agréable et enrichissante du Sacré Blog !
+        <br>
+        La confidentialité des informations vous concernant sont assurées par un chiffrement de tous vos mots de passe et d'une équipe de modérateurs pésents en cas de problèmes. Le Règlement Général sur la Protection des Données (RGPD) est ainsi bien respecté.
+        <br>
+        <br>
+        <strong><h3>« Chat en ligne » :</h3></strong>
+        <br>
+        Cette page vous permettra de débattre, discuter entre vous et apprendre à vous connaître 
+        <br>
+        <br>
+        
+        <strong><h3>« Aide aux devoirs » :</h3></strong>
+        <br>
+        Cette page d’échanges se focalise sur l’aide aux devoirs.
+        Si un utilisateur se trouve en difficulté sur un sujet ou, au contraire, s’il souhaite proposer de l’aide.
+        <br>
+        <br>
+        <strong><h3>« Support » :</h3><br></strong>
+        Il n’est pas improbable que vous rencontriez des problèmes au cours de votre utilisation. 
+        Si cela se présente nous vous invitons à nous contacter via l’adresse mail ci-dessous sacreblog39@gmail.com ou encore par les numéros suivants : 
+        0652411535, 0663778991
+        N’hésitez pas non plus à nous contacter si vous avez quelques questions quant au fonctionnement du site.
+        
+        </p>
+
+    </div>
+
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="css/inscription.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!--FORMULAIRE-->
+        
+        <form action="inscription" method="POST">
+            <p>Inscrivez vous ici</p>
+            <br>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" required>
+            <br>
+            <input type="email" name="email_inscr" id="email_inscr" placeholder="E-mail" required>
+            <br>
+            <input type="password" name="psw_inscr" id="psw_inscr" placeholder="Mot de passe" required>
+            <br>
+            <input type="password" name="ver_psw_inscr" id="ver_psw_inscr" placeholder="Valider le mot de passe" required>
+            <br>
+            <input type="submit" value="S'inscrire">
+            <br>
+            <a href="connexion.html">Déjà inscrit ? Connectes-toi ici</a>
+
+        
+        </form>
+
+    </div>   
+
+    <div id="email_invalide" class="overlay">
+        <div class="popup">
+            <h3>E-mail invalide</h3>
+            <a href="#" class="cross">&times;</a>
+            <p class="p">Veuillez entrer une adresse E-mail valide.</p>
+        </div>
+    </div>
+    
+    <div id="psw_diff" class="overlay">
+        <div class="popup">
+            <h3>Mot de passe différent</h3>
+            <a href="#" class="cross">&times;</a>
+            <p class="p">Veuillez valider avec deux fois le même mot de passe.</p>
+        </div>
+    </div>
+
+    <div id="email_introuvable" class="overlay">
+        <div class="popup">
+            <h3>Adresse E-mail introuvable</h3>
+            <a href="#" class="cross">&times;</a>
+            <p class="p">Votre adresse E-mail est introuvable, veuillez vous inscrire.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Récupération de mot de passe</title>
+    <link rel="stylesheet" href="css/nouveau_mdp.css">
+</head>
+<body>
+    <div>
+
+    </div>
+    <div class="container">
+        <!--FORMULAIRE-->
+
+        <form action="nouveau_mdp" method="POST">
+            <p>Entrez le code de validation pour <br> changer le mot de passe</p>
+            <br>
+            <input type="number" name="code" id="code" placeholder="Code de validation">
+            <br>
+            <input type="password" name="nouveau_mdp" id="mdp" placeholder="Nouveau mot de passe">
+            <br>
+            <input type="submit" value="Valider">
+            <br>
+            <a href="connexion.html">Annuler</a>
+        </form>
+    </div>
+
+    <div id="code_invalide" class="overlay">
+        <div class="popup">
+            <h3>Code invalide</h3>
+            <a href="#" class="cross">&times;</a>
+            <p class="p">Veuillez entrer code valide.</p>
+        </div>
+    </div>
+
+</body>
+</html>

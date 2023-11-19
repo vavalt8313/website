@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="css/connexion.css">
+</head>
+<body>
+    <div class="container">
+        <!--FORMULAIRE-->
+        
+        <form action="connexion" method="POST">
+            <p>Connectez-vous ici</p>
+            <br>
+            <input type="email" name="email_connex" id="email_connex" placeholder="E-mail">
+            <br>
+            <input type="password" name="psw_connex" id="psw_connex" placeholder="Mot de passe">
+            <br>
+            <input type="submit" value="Se connecter">
+            <br>
+        
+        </form>
+
+        <form action="log_out" method="post">
+            <button type="submit">Se déconnecter</button>
+            <br>
+            <a href="recup_email.html">Mot de passe oublié</a>
+            <br><br>
+            <a href="inscription.html">Pas inscrit ? Inscris-toi ici</a>
+        </form>
+
+    </div>
+
+    <div id="inscription_valide" class="overlay">
+        <div class="popup_valid">
+            <h3>Inscription valide</h3>
+            <a href="#" class="cross">&times;</a>
+            <p class="p">Merci de vous connecter.</p>
+        </div>
+    </div>
+
+    <div id="changement_valide" class="overlay">
+        <div class="popup_valid">
+            <h3>Mot de passe changé</h3>
+            <a href="#" class="cross">&times;</a>
+            <p class="p">Merci de vous connecter.</p>
+        </div>
+    </div>
+    
+    <div id="email_invalide" class="overlay">
+        <div class="popup">
+            <h3>E-mail invalide</h3>
+            <a href="#" class="cross">&times;</a>
+            <p class="p">Veuillez entrer une adresse E-mail valide.</p>
+        </div>
+    </div>
+
+    <div id="mdp_invalide" class="overlay">
+        <div class="popup">
+            <h3>Mot de passe invalide</h3>
+            <a href="#" class="cross">&times;</a>
+            <p class="p">Le mot de passe rentré ne correspond pas avec celui de la base de donnée.</p>
+        </div>
+    </div>
+
+</body>
+</html>
